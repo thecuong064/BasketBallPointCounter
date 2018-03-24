@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:layout_weight="1"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="#BDBDBD">
+
+    <LinearLayout
+        android:baselineAligned="false"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="6"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="center_horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="HOME"
+                android:textColor="#fff"
+                android:textSize="30sp"
+                />
+            <TextView
+                android:id="@+id/homeText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:textColor="#fff"
+                android:textSize="80sp"/>
+
+            <Button
+
+                android:layout_width="130dp"
+                android:layout_height="0dp"
+                android:text="3 Points"
+                android:onClick="home3"
+                android:textColor="#fff"
+                android:background="#FFA726"
+                android:layout_marginBottom="8dp"
+                android:layout_weight="2"/>
+
+            <Button
+
+                android:layout_width="130dp"
+                android:layout_height="0dp"
+                android:text="2 Points"
+                android:onClick="home2"
+                android:textColor="#fff"
+                android:background="#FFA726"
+                android:layout_marginBottom="8dp"
+                android:layout_weight="2"/>
+
+            <Button
+
+                android:layout_width="130dp"
+                android:layout_height="0dp"
+                android:text="Free Throw"
+                android:onClick="home1"
+                android:textColor="#fff"
+                android:background="#FFA726"
+                android:layout_marginBottom="8dp"
+                android:layout_weight="2"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="center_horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="GUEST"
+                android:textSize="30sp"
+                android:textColor="#fff"
+                />
+            <TextView
+                android:id="@+id/guestText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:textColor="#fff"
+                android:textSize="80sp"/>
+
+            <Button
+
+                android:layout_width="130dp"
+                android:layout_height="0dp"
+                android:text="3 Points"
+                android:textColor="#fff"
+                android:onClick="guest3"
+                android:background="#FFA726"
+                android:layout_marginBottom="8dp"
+                android:layout_weight="2"/>
+
+            <Button
+
+                android:layout_width="130dp"
+                android:layout_height="0dp"
+                android:text="2 Points"
+                android:onClick="guest2"
+                android:textColor="#fff"
+                android:background="#FFA726"
+                android:layout_marginBottom="8dp"
+                android:layout_weight="2"/>
+
+            <Button
+
+                android:layout_width="130dp"
+                android:layout_height="0dp"
+                android:text="Free Throw"
+                android:textColor="#fff"
+                android:onClick="guest1"
+                android:background="#FFA726"
+                android:layout_marginBottom="8dp"
+                android:layout_weight="2"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="4"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <Button
+            android:layout_width="72dp"
+            android:layout_height="48dp"
+            android:text="Undo"
+            android:textColor="#fff"
+            android:onClick="undo"
+            android:layout_marginTop="8dp"
+            android:background="#FFA726" />
+        <Button
+            android:layout_width="130dp"
+            android:layout_height="48dp"
+            android:layout_marginTop="8dp"
+            android:text="Finish"
+            android:textColor="#fff"
+            android:onClick="finish"
+            android:background="#FFA726" />
+        <TextView
+            android:id="@+id/resText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="45sp"
+            android:text=""
+            android:textColor="#fff"
+            android:layout_marginTop="8dp"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="center">
+
+        <Button
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:layout_marginBottom="8dp"
+            android:layout_marginTop="8dp"
+            android:background="#FFA726"
+            android:onClick="reset"
+            android:text="reset"
+            android:textColor="#fff"/>
+    </LinearLayout>
+
+
+</LinearLayout>
+
+
+
